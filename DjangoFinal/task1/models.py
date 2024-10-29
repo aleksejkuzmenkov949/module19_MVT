@@ -4,7 +4,7 @@ class Buyer(models.Model):
     name = models.CharField(max_length=100)  # Имя покупателя
     balance = models.DecimalField(max_digits=10, decimal_places=2)  # Баланс
     age = models.IntegerField()  # Возраст
-,
+
     def __str__(self):
         return self.name
 
